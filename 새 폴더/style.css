@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    word-break: keep-all;
+    outline: 0px solid silver;
+}
+
+img {
+    width: 100px;
+}
+
+body {
+    font-family: "pretendard", sans-serif;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1rem;
+    letter-spacing: 0.1px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "pretendard", sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+h4,
+h5 {
+    font-family: "Playfair Display", serif;
+}
+
+h4 {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+h5 {
+    font-size: 0.7rem;
+    line-height: 2rem;
+}
+
+a:link {
+    color: #666;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #666;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: red;
+}
+
+button {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding: 8px 25px;
+    border: 1px solid #ccc;
+    background: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+main {
+    position: relative;
+    background: url("https://jacksonchameleon.co.kr/product/dais/leather/04.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main> :nth-child(1) {
+    z-index: 1;
+    width: 600px;
+    color: white;
+    text-align: center;
+}
+
+main> :nth-child(1) * {
+    padding: 16px 0;
+}
+
+main> :nth-child(1) button {
+    padding: 10px 30px;
+}
+
+main> :nth-child(1) div {
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    bottom: 0px;
+}
+
+main> :nth-child(2) {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    margin: 0 auto;
+    background: white;
+    border: 1px solid silver;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 4rem;
+    color: black;
+}
+
+header div,
+header nav ul li {
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+header div {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 32px;
+}
+
+header div:hover {
+    color: rgb(189, 143, 101);
+}
+
+header nav {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header nav ul li {
+    border-bottom: 2px solid transparent;
+    display: inline-block;
+    width: 120px;
+    padding: 0 16px;
+}
+
+header nav ul li:hover {
+    color: rgb(189, 143, 101);
+    border-bottom: 2px solid black;
+}
+
+.Objet {
+    position: relative;
+    padding: 130px 0 80px;
+}
+
+.Objet h2 {
+    position: absolute;
+    top: 70px;
+    left: 30px;
+}
+
+.Objet>div {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+
+
+.Objet div section {
+    position: relative;
+    background: #ccc;
+    width: 50%;
+    height: 800px;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333;
+    overflow: hidden;
+}
+
+
+
+
+.Objet>div> :first-child,
+.Objet>div> :last-child {
+    color: white;
+    transition: 0.5s;
+}
+
+.Objet div section img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    color: white;
+    z-index: 0;
+    transition: 0.4s;
+      filter: brightness(0.7);
+    pointer-events: none;
+}
+
+.Objet div section:hover img {
+    transform: scale(1.2);
+    filter: brightness(0.5);
+}
+
+
+.Objet div section p {
+    z-index: 1;
+    pointer-events: none;
+  
+}
+
+
+.Objet div section div {
+    position: absolute;
+    background: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+
+}
+
+.content-box {
+    position: absolute; 
+    z-index: 1; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;  
+    gap: 20px;  
+    pointer-events: auto;
+}
+
+.content-box p {
+    color: rgb(37, 37, 37);
+    margin-bottom: 10px; 
+    
+}
+
+
+.Design {
+    padding: 80px 30%;
+    text-align: center;
+    background: #eee;
+}
+
+.Harmony {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.Harmony>div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Harmony div section {
+    position: relative;
+    background: #ccc;
+    width: 500px;
+    height: 500px;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Harmony>div> :nth-child(2) {
+    background: url("https://jacksonchameleon.co.kr/product/ink_joia/11.jpg") no-repeat;
+    background-size: cover;
+    background-position: top center;
+    color: white;
+}
+
+.Harmony>div> :nth-child(3) {
+    background: url("https://jacksonchameleon.co.kr/product/dough%20fabric/14.jpg") no-repeat;
+    background-size: cover;
+    background-position: top center;
+    color: white;
+}
+
+.Harmony div section p {
+    z-index: 1;
+}
+
+.Harmony div section div {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+
+.why {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.Atelier {
+    padding: 80px 0;
+    position: relative;
+    background: url("https://jacksonchameleon.co.kr/web/product/extra/small/202312/0f3a20b013585667e94c82fa46bf9cd2.jpg") no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+
+.Atelier::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    z-index: 0;
+}
+
+.Atelier>* {
+    position: relative;
+    z-index: 1;
+}
+
+.Atelier>div {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.Atelier>div> :last-child {
+    width: 770px;
+    padding: 30px 0;
+}
+
+.Atelier>p {
+    padding: 32px;
+    text-align: center;
+}
+
+.company {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.company div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.company div section {
+    width: 320px;
+}
+
+footer {
+    background: #eee;
+    padding: 80px 0;
+    text-align: center;
+}
